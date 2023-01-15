@@ -25,9 +25,11 @@ class UserPostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => ['required', 'email:rfc,dns', 'unique:App\Models\User,email'],
+            'name' => ['required', 'string', 'max:15', 'min:3'],
             'phone' => ['required', 'string', 'max:11'],
-            'name' => ['required', 'string', 'max:15'],
+            'email' => ['required', 'email:rfc,dns', 'unique:App\Models\User,email'],
+
+
         ];
     }
 
@@ -46,6 +48,7 @@ class UserPostRequest extends FormRequest
             'name.required' => 'Поле name обязательное для заполнения',
             'name.string' => 'Поле name должно быть строкой',
             'name.max' => 'Поле name слишком длинное',
+            'name.min' => 'Слишком мало сиволов в имени',
 
             'phone.required' => 'Поле phone обязательное для заполнения',
             'phone.string' => 'Поле phone должно быть строкой',
