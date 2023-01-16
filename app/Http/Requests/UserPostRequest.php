@@ -26,7 +26,7 @@ class UserPostRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:15', 'min:3'],
-            'phone' => ['required', 'string', 'max:11'],
+            'phone' => ['required', 'string', 'min:10', 'max:11'],
             'email' => ['required', 'email:rfc,dns', 'unique:App\Models\User,email'],
 
 
@@ -52,12 +52,14 @@ class UserPostRequest extends FormRequest
 
             'phone.required' => 'Поле phone обязательное для заполнения',
             'phone.string' => 'Поле phone должно быть строкой',
+            'phone.max' => 'Поле phone не может быть таким длинным',
+            'phone.min' => 'Поле phone не может быть таким маленьким',
 
 
             'email.required' => 'Поле email обязательное для заполнения',
             'email.fnc' => 'Поле email должно быть почтой',
             'email.dns' => 'Поле email должно быть почтой',
-            'email.unique' => 'Так поле уже есть в бд',
+            'email.unique' => 'Такой email уже харегистрирован уже есть в бд',
         ];
     }
 }
