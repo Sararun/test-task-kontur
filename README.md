@@ -8,6 +8,9 @@
 Скопировать env.example в .env
 
     cp .env.example .env
+Установить composer
+
+    composer install
 Зайти в env и установить значения
    Конфигурация бд
     
