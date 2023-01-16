@@ -3,3 +3,4 @@
 
     git clone https://github.com/Sararun/test-task-kontur.git
 Зайти в проект
+    cd test-task-kontur
