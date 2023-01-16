@@ -60,31 +60,31 @@
 
 Model
 
-   # User
+   ### User
  
         Описал поля, которые должны вставляться в бд
 
 Controller
 
-   # UserController
+   ### UserController
   
         Принимает данные с апи которые прошли валидацию,отправляет на почту админу, кладёт их в бд
 
 Requests
  
-   # UserPostRequest
+   ### UserPostRequest
   
         Описал ответ на данные из фронта и написал правила валидации
 
 Resource
  
-  #  UserResource
+  ###  UserResource
   
         Описал данные, которые должно лететь в бд 
 
 Mail
 
-  #  UserData
+  ###  UserData
     
         Описал данные которые должно лететь в письмо
 
