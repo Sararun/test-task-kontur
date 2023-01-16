@@ -66,13 +66,13 @@ Model
 
 Controller
 
-    UserController
+    # UserController
   
         Принимает данные с апи которые прошли валидацию,отправляет на почту админу, кладёт их в бд
 
 Requests
  
-    UserPostRequest
+    # UserPostRequest
   
         Описал ответ на данные из фронта и написал правила валидации
 
