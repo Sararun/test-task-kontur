@@ -8,16 +8,6 @@
 Скопировать env.example в .env
 
     cp .env.example .env
-Зайти в контейнер
-    
-    sail up
-    
-    docker-compose exec laravel.test bash
-    
-    php artisan migrate
-
-    exit
-
 Зайти в env и установить значения
    Конфигурация бд
     
@@ -38,3 +28,17 @@
     MAIL_ENCRYPTION=
     MAIL_FROM_ADDRESS="*@yandex.ru" * сюда ввести свою почту
     MAIL_FROM_NAME="${APP_NAME}"
+        
+        На данный момент mailer только с яндексом работает
+ 
+Зайти в контейнер
+    
+    sail up
+    
+    docker-compose exec laravel.test bash
+    
+    php artisan migrate
+
+    exit
+
+
