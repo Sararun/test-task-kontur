@@ -58,33 +58,33 @@
 # Объяснение кода
 Буду описывать те модули, которые создавал и редактировал
 
-Model
+## Model
 
-   ### User
+   ###3 User
  
         Описал поля, которые должны вставляться в бд
 
-Controller
+## Controller
 
-   ### UserController
+   ###3 UserController
   
         Принимает данные с апи которые прошли валидацию,отправляет на почту админу, кладёт их в бд
 
-Requests
+## Requests
  
-   ### UserPostRequest
+   #### UserPostRequest
   
         Описал ответ на данные из фронта и написал правила валидации
 
-Resource
+## Resource
  
-  ###  UserResource
+  ####  UserResource
   
         Описал данные, которые должно лететь в бд 
 
-Mail
+## Mail
 
-  ###  UserData
+  ####  UserData
     
         Описал данные которые должно лететь в письмо
 
